@@ -345,6 +345,7 @@
   # 2) LAPP - APACHE, POSTGRESQL & PHP
   # 3) LEMP - NGINX, MariaDB & PHP
   # 4) LEPP - NGINX, POSTGRESQL & PHP
+  # 5) PGAdmin 3
   WEBSERVER=4
   POSTGIS="n"
 #}}}

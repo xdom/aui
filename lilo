@@ -2651,6 +2651,9 @@ install_web_server(){
   echo " 3) LEMP - NGINX, MariaDB & PHP"
   echo " 4) LEPP - NGINX, POSTGRESQL & PHP"
   echo ""
+  echo " --- ADMIN TOOLS ---"
+  echo " 5) PGAdmin 3"
+  echo ""
   echo " b) BACK"
   echo ""
   read_input $WEBSERVER
@@ -2688,6 +2691,9 @@ install_web_server(){
       system_ctl enable php-fpm.service
       configure_php_nginx
       configure_php "postgresql"
+      ;;
+    5)
+      package_install "pgadmin3"
       ;;
   esac
 }
