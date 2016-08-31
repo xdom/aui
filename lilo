@@ -1523,6 +1523,9 @@ install_development_apps(){
     echo "13) $(menu_item "nodejs")"
     echo "14) $(menu_item "p4" "Perforce command line client")"
     echo "15) $(menu_item "p4v" "Perforce visual client")"
+    echo "16) $(menu_item "apache-ant" "Apache Ant")"
+    echo "17) $(menu_item "maven" "Maven")"
+    echo "18) $(menu_item "gradle" "Gradle")"
     echo ""
     echo " b) BACK"
     echo ""
@@ -1583,6 +1586,15 @@ install_development_apps(){
           ;;
         15)
           aur_package_install "p4v"
+          ;;
+        16)
+          package_install "apache-ant"
+          ;;
+        17)
+          package_install "maven"
+          ;;
+        18)
+          package_install "gradle"
           ;;
         "b")
           break

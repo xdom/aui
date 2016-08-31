@@ -166,6 +166,9 @@
   #13) NodeJS
   #14) Perforce command line client
   #15) Perforce visual client
+  #16) Apache Ant
+  #17) Maven
+  #18) Gradle
   DEVELOPMENT_OPTIONS="12"
 #}}}
 #OFFICE {{{
