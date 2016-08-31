@@ -2055,6 +2055,7 @@ install_internet_apps(){
             echo " 6) $(menu_item "viber") $AUR"
             echo " 7) $(menu_item "telegram-desktop-bin") $AUR"
             echo " 8) $(menu_item "qtox-git") $AUR"
+            echo " 9) $(menu_item "lmc") $AUR"
             echo ""
             echo " b) BACK"
             echo ""
@@ -2089,6 +2090,9 @@ install_internet_apps(){
                   ;;
                 8)
                   aur_package_install "qtox-git"
+                  ;;
+                9)
+                  aur_package_install "lmc"
                   ;;
                 "b")
                   break
