@@ -164,6 +164,8 @@
   #11) OpenJDK
   #12) OracleJDK
   #13) NodeJS
+  #14) Perforce command line client
+  #15) Perforce visual client
   DEVELOPMENT_OPTIONS="12"
 #}}}
 #OFFICE {{{

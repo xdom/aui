@@ -1521,6 +1521,8 @@ install_development_apps(){
     echo "11) $(menu_item "jdk7-openjdk" "OpenJDK")"
     echo "12) $(menu_item "jdk" "Oracle JDK") $AUR"
     echo "13) $(menu_item "nodejs")"
+    echo "14) $(menu_item "p4" "Perforce command line client")"
+    echo "15) $(menu_item "p4v" "Perforce visual client")"
     echo ""
     echo " b) BACK"
     echo ""
@@ -1575,6 +1577,12 @@ install_development_apps(){
           ;;
         13)
           package_install "nodejs"
+          ;;
+        14)
+          aur_package_install "p4"
+          ;;
+        15)
+          aur_package_install "p4v"
           ;;
         "b")
           break
