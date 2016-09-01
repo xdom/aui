@@ -169,6 +169,7 @@
   #16) Apache Ant
   #17) Maven
   #18) Gradle
+  #19) PGAdmin 3
   DEVELOPMENT_OPTIONS="12"
 #}}}
 #OFFICE {{{
@@ -346,7 +347,6 @@
   # 2) LAPP - APACHE, POSTGRESQL & PHP
   # 3) LEMP - NGINX, MariaDB & PHP
   # 4) LEPP - NGINX, POSTGRESQL & PHP
-  # 5) PGAdmin 3
   WEBSERVER=4
   POSTGIS="n"
 #}}}

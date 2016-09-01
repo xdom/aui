@@ -1526,6 +1526,7 @@ install_development_apps(){
     echo "16) $(menu_item "apache-ant" "Apache Ant")"
     echo "17) $(menu_item "maven" "Maven")"
     echo "18) $(menu_item "gradle" "Gradle")"
+    echo "19) $(menu_item "pgadmin3" "PGAdmin 3")"
     echo ""
     echo " b) BACK"
     echo ""
@@ -1595,6 +1596,9 @@ install_development_apps(){
           ;;
         18)
           package_install "gradle"
+          ;;
+        19)
+          package_install "pgadmin3"
           ;;
         "b")
           break
@@ -2655,9 +2659,6 @@ install_web_server(){
   echo " 3) LEMP - NGINX, MariaDB & PHP"
   echo " 4) LEPP - NGINX, POSTGRESQL & PHP"
   echo ""
-  echo " --- ADMIN TOOLS ---"
-  echo " 5) PGAdmin 3"
-  echo ""
   echo " b) BACK"
   echo ""
   read_input $WEBSERVER
@@ -2695,9 +2696,6 @@ install_web_server(){
       system_ctl enable php-fpm.service
       configure_php_nginx
       configure_php "postgresql"
-      ;;
-    5)
-      package_install "pgadmin3"
       ;;
   esac
 }
